@@ -1,1 +1,39 @@
 hello world
+这个错误提示是由于 GitHub 已经于 2021 年 8 月 13 日停用了基于密码的身份验证方式，而你正在尝试使用基于密码的身份验证方式进行 Git 操作，因此出现了该错误。
+
+为了解决这个问题，你需要将你的 Git 仓库配置为使用 SSH 密钥进行身份验证。以下是配置 SSH 密钥的步骤：
+
+检查本地是否已经存在 SSH 密钥
+在终端中输入以下命令：
+
+bash
+Copy code
+ls -al ~/.ssh
+如果你看到以下文件之一：
+
+id_rsa
+id_rsa.pub
+id_dsa
+id_dsa.pub
+则表示你已经拥有一个 SSH 密钥。如果你没有看到这些文件，或者你没有 SSH 密钥，那么你需要生成一个新的 SSH 密钥。
+
+生成新的 SSH 密钥
+在终端中输入以下命令：
+
+mathematica
+Copy code
+ssh-keygen -t ed25519 -C "your_email@example.com"
+将 your_email@example.com 替换为你的电子邮件地址，并按照提示输入一个安全的密码。
+
+添加 SSH 密钥到 GitHub 账户
+将 SSH 公钥添加到你的 GitHub 帐户中。打开 GitHub 的网站，单击你的头像，然后选择 "Settings"。选择 "SSH and GPG keys"，然后点击 "New SSH key"。将你的公钥复制到文本框中，并为该密钥提供一个有意义的名称。
+
+修改 Git 仓库配置
+在 Git 仓库的根目录中，打开终端并输入以下命令：
+
+kotlin
+Copy code
+git remote set-url origin git@github.com:username/repo.git
+将 username 替换为你的 GitHub 用户名，将 repo 替换为你的仓库名称。
+
+现在，你可以使用 SSH 密钥进行 Git 操作了。
