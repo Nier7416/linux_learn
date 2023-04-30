@@ -6,3 +6,46 @@ linux操作系统
 3.GUI Desktop环境
 4.Application 应用
 
+GNU/Linux
+
+Linux 内核：
+1.硬件设备 管理使用
+2.软件程序（系统）-->操作系统
+3.系统内存（虚拟内存和物理内存）
+4.文件管理：保存文件，删除文件，修改文件
+
+
+windows的文件系统：NTFS
+
+文件系统：读、写的标准
+
+df -T(查看分区)
+
+U盘如果是FAT32将不支持4G以上的传输速率（注意这里说的是单个文件），需要将U盘格式化为NTFS exFAT（目前闪存常用）
+
+
+
+文件系统 - Linux 支持的文件系统类型：ext, ext2, ext3, ext4, hpfs, iso9660, JFS, minix,
+       msdos、ncpfs、nfs、ntfs、proc、Reiserfs、smb、sysv、umsdos、vfat、XFS、xiafs
+
+文件系统通常是ext4,引导使用的vfat
+
+
+Unix上具有的一些软件，Linux内核本身没有，所以GNU他们模仿Unix,为Linux写了一些必要的软件
+
+1.GNU核心：
+原本在Unix上的一些命令和工具，被模仿（移植）到了Linux上
+供Linux使用的这套工具：coreutils	coreutils 软件包
+
+（1）用来处理文件的工具
+（2）用来操作文件的工具
+（3）用来管理进程的工具
+
+
+2  shell提供给用户使用的软件：用户拿它来使用电脑，并且和电脑交互
+
+命令行壳层提供一个命令行界面（CLI）;而图形壳层提供了一个图形用户界面（GUI）
+Linux shell->CLI Command-Line Interface(全称）
+
+
+
