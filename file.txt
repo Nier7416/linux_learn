@@ -1,0 +1,8 @@
+
+linux操作系统
+四个部分：
+1.Linux kernel内核
+2.GNU工具
+3.GUI Desktop环境
+4.Application 应用
+
