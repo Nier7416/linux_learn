@@ -38,7 +38,99 @@ ls
 
 
 14./bin 二进制目录 GNU工具 ls等自带的命令
-   /cdrom
-   
+
+  /bin 二进制目录 GNU工具 ls等自带的命
+
+/cdrom 是一个常见的光盘设备挂载点，用于挂载光盘设备（如 CD-ROM 或 DVD-ROM）的目录。在大多数情况下，当你插入光盘时，系统会自动将光盘设备挂载到 /cdrom 目录下。
+
+/etc 系统配置文件目录（类似与windows的注册表） 
+
+/home 主目录，显示所有用户目录
+
+/lib 库目录,库与库之间的依赖目录
+
+/lost+found...  意外断电或突发情况，会保存在这
+
+/mnt 挂载目录，U盘等
+
+/proc伪文件系统，
+/proc 是一个特殊的虚拟文件系统，用于提供关于系统内核和运行进程的信息。它不是一个实际的物理文件系统，而是在内存中动态生成的。
+
+/run运行目录，正在运行的进程
+
+/snap 是 Ubuntu 上的一个特殊目录，用于存储 Snap 包的安装和运行数据。Snap 是一种应用程序打包和分发格式，它提供了自包含的软件包，其中包含应用程序及其所有依赖项。
+
+当你使用 snap 命令安装 Snap 应用程序时，相关的 Snap 包将被下载并安装到 /snap 目录下。在该目录下，每个 Snap 包都有自己的子目录，以包名命名。
+
+例如，如果你安装了一个名为 "example-app" 的 Snap 应用程序，它的安装目录将位于 /snap/example-app 下。在该目录中，你将找到与该应用程序相关的文件和目录，包括可执行文件、配置文件和其他资源。
+
+
+
+/tmp临时目录
+
+/var可变目录（存放经常变化的目录）
+
+/boot启动目录
+
+/dev设备目录
+
+/media媒体目录，加入外在设备可以直接扫描出来的放在这里
+
+/opt 可选目录（放一些第三方的软件包，不是linux自带的，比如说qq,wechat）
+
+/root  root用户的主目录，管理员
+
+/sbin系统二进制目录，GNU高级管理员使用的命令工具
+
+/srv 服务目录，本地目录（mysql57）
+
+/usr 用户二进制目录，GNU工具（/usr/bin/）
+
+
+
+
+15.gredit如果路径正确的话直接打开文件
+	gredit /honme/frank/Documents/doc/1.txt  (绝对路径打开方式)
+
+/的意思是在某文件下边，如果用相对路径可以吧/去掉	gredit Documents/doc/1.txt	(注意这里没有/)
+
+gredit /Documents/doc/1.txt	在系统根目录下查找Documents   普通用户没有权限操作系统目录，即使写了也不能保存
+
+另类的绝对路径
+
+	gredit ./Documents/doc/1.txt
+	gredit ~/Documents/doc/1.txt
+
+单点符. ，表示当前目录
+
+ls+目录		ls ./Documents/doc
+
+
+16.ls Documents/ -FR
+(查看Docunments下都有啥文件夹，文件夹下有那些文件)
+
+17.过滤
+	ls -l Redis_*.pdf
+
+	ls -l Redis_copy?.pdf
+
+两个相同的效果（*代表多个符号，？代表一个符号）
+
+文件扩展匹配符（？，*）
+
+
+18.元字符通配符
+
+ls -l f[a-k]ck.txt
+ls -l f[!a-k]ck.txt
+
+
+
+19.组合命令
+
+cd .. && ls
+
+20.touch 命令不是覆盖，是更新文件时间
+touch 2.txt
 
 
