@@ -58,6 +58,29 @@ ln -s 1.java 1_linkfile(创建软链接) 软链接可以在不同的硬盘上
 ln 1.java 2_linkfile(创建硬链接)硬链接必须在同一快盘符上
 
 
+如果cp一个链接文件给别人，只会会先报错快捷方式没有源文件
+
+Symbolic links
+soft links
+
+3.重命名
+mv source rename在同一目录下，便是重命名
+
+
+4.mv test.c ~/Documents/pdf/
+cd !$(这条命令的意思cd到上一条命令的最后一个目录下)	相当与cd ~/Documents/pdf/
+
+mv ./pdf ~/project/(将pdf以及pdf下的所有文件进行移动)
+
+5.删除
+rm -rf pdf/（将pdf文件夹及其下面文件全部删除）
+rm -i test.c(与上面的cp命令一样)
+不可以rm -irf test.c 不会提示
+
+rm -i -r doc/可以这样使用，从文件夹开始删除，每一个都会提醒你
+
+
+
 
 
 
