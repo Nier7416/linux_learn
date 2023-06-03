@@ -1,0 +1,67 @@
+1.cp命令回复改掉原来的文件，不会提醒
+	应定要用这个命令：cp -i 1.txt 2.txt
+cp:overwrite '2.txt'?    y是确定，n是取消，覆盖完成后文件时间会更新
+
+cp -r连同文件夹和里面东西一起复制过去（仅限于当前目录）
+cp -r /home/nier/Documents/doc /home/nier/Downloads/（文件夹和内容一起复制）
+cp /home/nier/Documents/doc/* /honme/nier/Dowenlodads(只会复制里面文件)
+
+
+cp -i 1.txt ~/Downloads/
+
+
+cp -i 1.txt ../
+cp -i 1.txt ../../
+cp -i 1.txt ../../Downloads/
+
+cp ../pdf/* .
+
+
+cp -R ./*.java ~/Docunments/temp/
+
+
+
+2.cd -表示上一次所在的目录
+
+
+3.ctrl+方向键可以跳跃单词
+
+
+4.ctrl+l将内容全部移到上面去
+
+
+5.ctrl+a跳到命令的开头
+
+ctrl+e跳到结尾
+
+ctrl+h从光标当前位置向前删
+
+ctrl+t将光标下的字母一直往后移
+
+ctrl+u将整个一行全部清空（仅限于在局末时），在中间时将前面的全部删掉不包含光标下的内容
+
+ctrl+r用于索引，下一条记录继续按ctrl+r
+
+ctrl+k将光标后的内容全部删掉包括光标下的字母
+
+
+6.链接文件
+1.符号文件（软链接）----快捷方式
+原来的文件/文件夹 必须是存在的
+
+2.硬链接
+副本
+原来的文件/文件夹 必须是存在的
+
+
+ln -s 1.java 1_linkfile(创建软链接) 软链接可以在不同的硬盘上
+ln 1.java 2_linkfile(创建硬链接)硬链接必须在同一快盘符上
+
+
+
+
+
+
+
+
+
