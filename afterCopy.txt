@@ -79,6 +79,33 @@ rm -i test.c(与上面的cp命令一样)
 
 rm -i -r doc/可以这样使用，从文件夹开始删除，每一个都会提醒你
 
+6.创建文件夹
+mkdir -p js/src/util(-p可以创建子目录)
+
+rmdir(只能删除空目录)
+
+Dash for macOS
+
+
+7.文件查看
+file 1.txt	1.txt:ASCII text(注意这里与windows的区别，windows是txt)
+
+fire Project/	Project/:directory
+
+
+
+file 1_linkfile
+1_linkfile: symbolic link to 1.java
+
+
+8.cat命令
+1.txt(123)
+cat 1
+123
+file 1
+1:ASCII text
+
+cat(只能用于短的文本，它依赖于滚轮)
 
 
 
