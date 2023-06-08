@@ -107,10 +107,29 @@ file 1
 
 cat(只能用于短的文本，它依赖于滚轮)
 
+cat -A所有的回车会替换为$，所有的tab被替换为^I 
+
+cat -n显示行编号
 
 
 
+9.more命令（不是很实用）
+全屏按页显示，more(50%)
+空格向下滚动一平，b向上滚动，q退出
 
+H显示帮助，在按b返回去
+
+
+10.less命令
+pageup和pagedown进行上下页
+/xxx进行搜索（/fd，搜索所有fd的内容）
+
+11.如果是音乐文件，上面的more和less命令都不行（只是相当与用记事本打开）
+
+tail demo.c（只会看最后面10行)
+tail -n 2 demo.c(只看最后面两行)
+head demo.c(前10行)
+head -n 2 demo.c(前两行)
 
 
 

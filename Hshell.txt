@@ -1,0 +1,14 @@
+1.ps(process status)
+
+ps -A
+ps -l
+ps axo pid,comm,pcpu
+ps -aux | grep named
+
+gedit打开记事本
+
+
+nier@nier-virtual-machine:~/Documents/temp$ ps -aux | grep gedit
+nier       34770  0.0  0.0  12124   660 pts/1    S+   12:50   0:00 grep --color=auto gedit
+（输入的一条命令也算一个进程）
+
